@@ -1,2 +1,2 @@
 # Gnomish-Mines
-Haskell Gnomish Mines
+Adventure text based game written in Haskell
