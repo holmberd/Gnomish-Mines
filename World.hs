@@ -16,7 +16,7 @@ world = World { maxY=2
 rooms1 :: Rooms
 rooms1 = [[room1,room2],[room3,room4]]
 room1, room2, room3, room4 :: Room
-room1 = Room { description="You are standing at the buttom staircase of a dungeon.\n", items=[item1], location=(Location 1 1)}
+room1 = Room { description="You are standing at the bottom staircase of a dungeon.\n", items=[item1], location=(Location 1 1)}
 room2 = Room { description="There is light coming down from a hole in the celing\nand there is a pile of bones in the middle of the room.\n", items=[item4], location=(Location 2 1)}
 room3 = Room { description="There is some empty barrels in the corner here\nand the room smells of smoke\n", items=[item3], location=(Location 1 2)}
 room4 = Room { description="You have entered a great hall,\nthere is a big fire burning in the middle of the hall.\n", items=[item3,item2], location=(Location 2 2)}
