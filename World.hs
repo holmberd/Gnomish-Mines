@@ -30,14 +30,13 @@ item3 = Item { name="Lantern", value=1, property=3}
 help :: String
 help = "\n-------------------------------------------------" 
 	++ "\nWelcome to the GnomishMines help meny.\n" 
-	++ " - take up an item type: take itemsname\n" 
-	++ " - drop an item type: drop itemsname\n"
-	++ " - move to different rooms type: South, North, East or West\n" 
-	++ " - Check inventory type: inventory\n" 
-	++ " - Attack monsters type: kill monstersname\n"
-	++ " - check score type: score" 
-	++ " - exit game type: exit\n"
-	++ " - To get to this meny I leave for you to figure out\n"
+	++ " - Take up an item, type: take item name\n" 
+	++ " - Drop an item, type: drop item name\n"
+	++ " - Move to a different room, type: South, North, East or West\n" 
+	++ " - Check inventory, type: inventory\n" 
+	++ " - Attack monster/npc, type: kill monstersname\n"
+	++ " - Check score, type: score" 
+	++ " - Exit game, type: exit\n"
 	++ "-------------------------------------------------\n"
 
 
