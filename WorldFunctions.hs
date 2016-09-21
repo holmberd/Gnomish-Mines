@@ -39,7 +39,7 @@ setCurrentRoom loc (Player inv score' currentRoom') world = ((getRoom world loc)
 printDescription :: Room -> IO()
 printDescription room = putStr (description(room))
 
--- Gets all the direktions to nearby rooms that you can go into.
+-- Gets all the directions to nearby rooms that you can go into.
 -- The int(n) should always be = 0, it's a counter.
 getDir :: Room -> World -> Int -> [Location]
 getDir room world n
@@ -48,13 +48,13 @@ getDir room world n
 		= [(snd((doorLocs(world))!!n))] ++ getDir room world (n+1)
 	| otherwise = getDir room world (n+1)
 	
--- makes Directions(Locations) to a pair whit a location
+-- makes Directions(Locations) to a pair with a location
 -- and a direction, that are either North, South, East or West. 	
 makeLocDir :: [Location] -> Room -> [(String,Location)]
 makeLocDir [] room = []
 makeLocDir (loc:loc') room = [((cmpDir loc room),loc)] ++ makeLocDir loc' room
 
--- Compares a Location whit the location in the current room
+-- Compares a Location with the location in the current room
 -- and tells you if the new location is N,S,E,W from you.
 cmpDir :: Location -> Room -> String
 cmpDir (Location x y) (Room descp items (Location x' y'))
@@ -78,7 +78,7 @@ printDir :: [(String,Location)] -> IO()
 printDir locdir = do putStr (checkDir locdir)
 
 -- Returns the Items names in a string.
--- items whit a property smaller then 5 is considered a item.
+-- items with a property smaller then 5 is considered a item.
 getItemsNames :: Items -> String
 getItemsNames [] = []
 getItemsNames (item:item')
@@ -93,7 +93,7 @@ printRoomItems room
 	| otherwise = putStr ""
 
 -- Returns the Monsters names in a string.
--- items whit a property higher then 4 is considered a monster.
+-- items with a property higher then 4 is considered a monster.
 getMonstersNames :: Items -> String
 getMonstersNames [] = []
 getMonstersNames (item:item')
